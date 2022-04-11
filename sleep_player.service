@@ -1,0 +1,13 @@
+[Unit]
+Description=sleep_player
+
+[Service]
+WorkingDirectory=/home/pi
+User=pi
+ProtectHome=off
+ExecStartPre=amixer set Headphone 75% --quiet
+ExecStart=/usr/bin/python -u /home/pi/sleep_player/player.py
+RestartSec=15
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
