@@ -3,3 +3,4 @@ a simple script and service for playing sleep meditations using a raspberry pi a
 
 
 uses python-mpv https://github.com/jaseg/python-mpv
+`pip install python-mpv`
